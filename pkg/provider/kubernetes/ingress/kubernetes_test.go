@@ -36,7 +36,6 @@ var _ provider.Provider = (*Provider)(nil)
 
 func pointer[T any](v T) *T { return &v }
 
-<<<<<<< HEAD
 func TestGetRouterConfigUsesResourceVersionCache(t *testing.T) {
 	p := &Provider{}
 	ing := &netv1.Ingress{
