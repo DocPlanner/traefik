@@ -1,3 +1,12 @@
+<!-- DOCPLANNER FORK NOTICE -->
+> ## 🛠️ DocPlanner fork — read before working here
+>
+> This is DocPlanner's performance fork of Traefik. **`docplanner/production-k8s-provider-perf` is the working branch** — it carries our Kubernetes-provider performance patches plus the `fork-image` CI workflow, and the production GHCR image (`ghcr.io/docplanner/traefik`) builds from it. **Do all future upstream-sync / rebase work on this branch.**
+>
+> To sync the fork onto a newer upstream Traefik release, follow the procedure in
+> [`.claude/skills/syncing-traefik-fork/SKILL.md`](./.claude/skills/syncing-traefik-fork/SKILL.md)
+> (also runnable as the `syncing-traefik-fork` Claude Code skill). It covers rebasing the patch stack onto the new
+> release tag, re-verifying each patch is still logically correct, the production build checks, and republishing.
 
 <p align="center">
     <picture>
