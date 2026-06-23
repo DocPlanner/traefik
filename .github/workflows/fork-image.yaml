@@ -45,6 +45,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Fetch upstream tags
+        run: |
+          git remote add upstream https://github.com/traefik/traefik.git
+          git fetch upstream --tags --no-recurse-submodules
+
       - name: Set up Go
         uses: actions/setup-go@7a3fe6cf4cb3a834922a1244abfce67bcef6a0c5 # v6.2.0
         with:
